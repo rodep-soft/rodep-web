@@ -26,3 +26,10 @@ $ pnpm add <pkg_name>
 # ci/cd経由のデプロイをするので基本必要なし
 $ pnpm build
 ```
+
+## Rules
+
+基本的にbranchを切って、`main`にこまめにPRを出して下さい. `main`へのMergeが行われると、Actions経由でdeployされます.
+
+
+
