@@ -13,10 +13,14 @@ Rodep公式Website
 ```bash
 # build
 $ docker compose build
+# or
+$ make build
 
 # astro開発サーバの立ち上げ
 # http://localhost:4321にアクセス
 $ docker compose up -d
+# or
+$ make
 
 # package追加するとき
 # コンテナの中で
@@ -31,5 +35,11 @@ $ pnpm build
 
 基本的にbranchを切って、`main`にこまめにPRを出して下さい. `main`へのMergeが行われると、Actions経由でdeployされます.
 
+## License
 
+- ソースコードは [MIT License](LICENSE) の下で公開されています。
+- ただし、サークルのロゴ・画像等については **無断転載・無断使用を禁止** します（All Rights Reserved）。
 
+## Contact
+
+管理人: `yano.tatsuki439@mail.kyutech.jp`
