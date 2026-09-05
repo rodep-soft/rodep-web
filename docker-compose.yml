@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      network: host
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    ports:
+      - "4321:4321"
+    volumes:
+      # node_modules, .astro cacheを保護
+      - .:/app
+      - /app/node_modules
+      - /app/.astro
+    environment:
+      - HOST=0.0.0.0
+      - PORT=4321
+    command: pnpm dev --host
