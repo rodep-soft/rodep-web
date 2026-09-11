@@ -4,7 +4,7 @@ export default {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'es5',
-  plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
+  plugins: ['prettier-plugin-astro'],
   overrides: [
     {
       files: '*.astro',
