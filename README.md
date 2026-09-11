@@ -31,6 +31,12 @@ $ pnpm add <pkg_name>
 $ pnpm build
 ```
 
+`docker-buildx`が必要です.
+
+```bash
+$ sudo pacman -S docker-buildx
+```
+
 ## Rules
 
 基本的にbranchを切って、`main`にこまめにPRを出して下さい. `main`へのMergeが行われると、Actions経由でdeployされます.
