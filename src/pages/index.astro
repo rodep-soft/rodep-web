@@ -10,19 +10,511 @@ import '../styles/global.css';
     <title>rodep</title>
   </head>
   <body>
-    <h1>rodep</h1>
-    <p>おはよう</p>
+    <!-- ヘッダー -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand-logo">rodep</a>
+        <nav class="nav-links">
+          <a href="#activities">活動内容</a>
+          <a href="#competitions">参加大会</a>
+          <a href="#robots">機体</a>
+          <a href="#sponsors">協賛</a>
+          <a href="#contact" class="nav-contact">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- キャッチコピー（画面全体を使ってダイナミックに） -->
+      <section class="hero-section">
+        <div class="container hero-inner">
+          <h1 class="hero-title">これがキャッチコピーだ！！</h1>
+        </div>
+      </section>
+
+      <!-- 部の目標（キャッチコピーと距離・壁を出すための境界線つき） -->
+      <section id="goal" class="section-goal">
+        <div class="container">
+          <div class="goal-wrapper">
+            <h2 class="goal-title">これが部の目標だ！</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- 活動内容：これまで & これから -->
+      <section id="activities" class="section">
+        <div class="container">
+          <!-- これまで -->
+          <div class="activity-group">
+            <h3 class="section-heading">これまで</h3>
+            <div class="grid-2">
+              <div class="item-card">
+                <div class="image-box">
+                  <span>ここにroxの画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">rox</h4>
+                  <p class="desc-text">球技。２連覇。</p>
+                </div>
+              </div>
+
+              <div class="item-card">
+                <div class="image-box">
+                  <span>ここにrescueの画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">rescue</h4>
+                  <p class="desc-text">不整地走破やアーム操作など。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- これから -->
+          <div class="activity-group">
+            <h3 class="section-heading">これから</h3>
+            <div class="item-card">
+              <div class="image-box image-box-large">
+                <span>ここに学ロボの画像</span>
+              </div>
+              <div class="desc-box">
+                <h4 class="desc-heading">NHK学生ロボコン</h4>
+                <p class="desc-text">ここに学ロボについての一行程度説明文が入ります。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 活動体制 -->
+          <div class="activity-group teams-section">
+            <h3 class="section-heading">３つの技術班と運営班</h3>
+            <div class="teams-grid">
+              <div class="item-card">
+                <div class="image-box image-box-team">
+                  <span>ここに機械の画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">機械</h4>
+                  <p class="desc-text">ここに機械班についての一行程度説明文が入ります。</p>
+                </div>
+              </div>
+
+              <div class="item-card">
+                <div class="image-box image-box-team">
+                  <span>ここに回路の画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">回路</h4>
+                  <p class="desc-text">ここに回路班についての一行程度説明文が入ります。</p>
+                </div>
+              </div>
+
+              <div class="item-card">
+                <div class="image-box image-box-team">
+                  <span>ここに制御の画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">制御</h4>
+                  <p class="desc-text">ここに制御班についての一行程度説明文が入ります。</p>
+                </div>
+              </div>
+
+              <div class="item-card">
+                <div class="image-box image-box-team">
+                  <span>ここに運営の画像</span>
+                </div>
+                <div class="desc-box">
+                  <h4 class="desc-heading">運営</h4>
+                  <p class="desc-text">ここに運営班についての一行程度説明文が入ります。</p>
+                </div>
+              </div>
+            </div>
+            <div class="team-link-row">
+              <a href="#activities-detail" class="detail-link">活動内容の詳細はこちら <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 協賛企業 -->
+      <section id="sponsors" class="section">
+        <div class="container">
+          <h5 class="section-heading">ご支援いただいています。</h5>
+          <div class="image-box sponsor-box">
+            <span>ここに協賛企業をずらーっと</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- お問い合わせ -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h6 class="section-heading">ご連絡ください。</h6>
+          <div class="image-box contact-box">
+            <span>ここにお問い合わせフォーム</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">&copy; 2026 rodep</p>
+        <p class="footer-contact">連絡先: <a href="mailto:yano.tatsuki439@mail.kyutech.jp">yano.tatsuki439@mail.kyutech.jp</a></p>
+      </div>
+    </footer>
   </body>
 </html>
 
 <style>
-  body {
-    background-color: #020617; /* slate-950 */
-    color: #f1f5f9; /* slate-100 */
+  /* ============================================================
+     【サイズ・カラー指定設定】
+     ここを変更するだけで各要素のサイズや配色を微調整できます
+     ============================================================ */
+  :root {
+    /* --- カラー設定（現在：薔薇色・シグナルレッド・チェリー系） --- */
+    /* メイン背景色（白ベースでチェリーが映えるごく淡いペールローズホワイト） */
+    --color-bg-base: #fdfbfc;
+    /* カード・ボックス背景色 */
+    --color-bg-card: #ffffff;
+    /* ボックス枠線・区切り線の色 */
+    --color-border: #f7e4e7;
+    /* キャッチコピーと目標を隔てる線の色 */
+    --color-divider: #edd2d6;
+
+    /* メイン赤（ロゴ・リンク・アクセント：薔薇色・シグナルレッド・チェリーの鮮明な赤） */
+    --color-primary: #dc143c;        /* Crimson / Cherry Red: 濁りのない鮮明なチェリー・薔薇色 */
+    --color-primary-hover: #b01030;  /* ホバー時のディープチェリー */
+    --color-primary-soft: #fef2f4;   /* ボックス背景用の淡いソフトチェリー */
+
+    /* -------------------------------------------------------------
+       【青紫に戻す用プリセット】
+       --color-bg-base: #f9f9fc;
+       --color-border: #e2e4f3;
+       --color-divider: #c7d2fe;
+       --color-primary: #4f46e5;
+       --color-primary-hover: #3730a3;
+       --color-primary-soft: #eef2ff;
+       ------------------------------------------------------------- */
+
+    /* 文字色（シンプルで視認性の高いブラック・グレー） */
+    --color-text-main: #171717;
+    --color-text-muted: #737373;
+
+    /* --- サイズ設定 --- */
+    --container-max-width: 1080px;  /* コンテンツ最大横幅 */
+    --hero-height: 82vh;            /* キャッチコピーの高さ（画面全体を使う高さ） */
+    --section-spacing: 5.5rem;      /* 各セクション間の縦余白 */
+
+    /* 文字サイズ */
+    --font-size-hero: clamp(2.8rem, 7.5vw, 5.5rem); /* ダイナミックなキャッチコピー */
+    --font-size-goal: clamp(1.8rem, 4vw, 2.75rem);   /* 部の目標 */
+    --font-size-heading: 1.5rem;                     /* 各セクション見出し(h3) */
+    --font-size-desc-heading: 1.15rem;               /* 説明見出し(h4) */
+    --font-size-desc-text: 0.95rem;                  /* 1行説明文 */
+
+    /* 画像プレースホルダー等の高さ */
+    --height-img-default: 230px;    /* rox, rescue */
+    --height-img-large: 340px;      /* 学ロボ */
+    --height-img-team: 160px;       /* 機械・回路・制御・運営 */
+    --height-img-sponsor: 140px;    /* 協賛 */
+    --height-img-contact: 200px;    /* お問い合わせ */
+
+    /* 角丸 */
+    --radius: 6px;
   }
 
-  h1 {
-    font-size: 1.875rem; /* text-3xl */
-    font-weight: 700; /* font-bold */
+  /* ============================================================
+     基本レイアウト
+     ============================================================ */
+  body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding-top: var(--section-spacing);
+  }
+
+  /* ============================================================
+     ヘッダー
+     ============================================================ */
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-bg-base);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .header-inner {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .nav-links a {
+    color: var(--color-text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-primary);
+  }
+
+  .nav-contact {
+    color: var(--color-primary) !important;
+    font-weight: 700 !important;
+  }
+
+  /* ============================================================
+     キャッチコピー（画面全体を使ってダイナミックに）
+     ============================================================ */
+  .hero-section {
+    min-height: var(--hero-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-hero);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--color-text-main);
+    margin: 0;
+  }
+
+  /* ============================================================
+     部の目標（キャッチコピーと距離・壁を出すための境界線つき）
+     ============================================================ */
+  .section-goal {
+    border-top: 1px solid var(--color-divider);
+    padding-top: var(--section-spacing);
+  }
+
+  .goal-wrapper {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .goal-title {
+    font-size: var(--font-size-goal);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--color-text-main);
+  }
+
+  /* ============================================================
+     セクション共通見出し
+     ============================================================ */
+  .section-heading {
+    font-size: var(--font-size-heading);
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    color: var(--color-text-main);
+  }
+
+  .activity-group {
+    margin-bottom: var(--section-spacing);
+  }
+
+  .activity-group:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ============================================================
+     画像プレースホルダーボックス
+     ============================================================ */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .image-box {
+    background-color: var(--color-primary-soft);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    height: var(--height-img-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  .image-box-large {
+    height: var(--height-img-large);
+  }
+
+  .image-box-team {
+    height: var(--height-img-team);
+  }
+
+  .sponsor-box {
+    height: var(--height-img-sponsor);
+  }
+
+  .contact-box {
+    height: var(--height-img-contact);
+  }
+
+  /* ============================================================
+     説明ブロック（h4見出し ＋ 1行説明）
+     ============================================================ */
+  .desc-box {
+    margin-top: 0.85rem;
+  }
+
+  .desc-heading {
+    font-size: var(--font-size-desc-heading);
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 0 0 0.25rem 0;
+  }
+
+  .desc-text {
+    font-size: var(--font-size-desc-text);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ============================================================
+     ３つの技術班と運営班（横並びブロック ＆ リンク）
+     ============================================================ */
+  .teams-section {
+    padding-top: 1rem;
+  }
+
+  .teams-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .team-link-row {
+    margin-top: 1.5rem;
+    text-align: right;
+  }
+
+  .detail-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .detail-link:hover {
+    color: var(--color-primary-hover);
+  }
+
+  .detail-link .arrow {
+    transition: transform 0.15s ease;
+  }
+
+  .detail-link:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  /* ============================================================
+     フッター
+     ============================================================ */
+  .site-footer {
+    margin-top: var(--section-spacing);
+    border-top: 1px solid var(--color-border);
+    padding: 2.5rem 0;
+    background-color: var(--color-bg-card);
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-copy {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+  }
+
+  .footer-contact {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  .footer-contact a {
+    color: var(--color-text-main);
+    text-decoration: none;
+  }
+
+  .footer-contact a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  /* ============================================================
+     レスポンシブ対応
+     ============================================================ */
+  @media (max-width: 768px) {
+    :root {
+      --hero-height: 65vh;
+      --section-spacing: 4rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .teams-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 </style>
